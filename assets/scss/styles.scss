@@ -6,10 +6,11 @@
 @import "./base/preset";
 
 @import "./components/header-area";
-@import "./components/order-type";
-@import "./components/order-info-area";
-@import "./components/recent-order-area";
 @import "./components/menu-category-area";
 @import "./components/menu-list-area";
+@import "./components/menu-item";
+@import "./components/order-info-area";
+@import "./components/order-type";
+@import "./components/recent-order-area";
 
 @import "./pages/order-page";
