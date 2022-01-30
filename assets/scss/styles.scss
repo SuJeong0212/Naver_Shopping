@@ -6,13 +6,18 @@
 @import "./base/preset";
 
 @import "./components/header-area";
-@import "./components/menu-category-area";
 @import "./components/menu-item";
-@import "./components/menu-list-area";
-@import "./components/order-box-area";
-@import "./components/order-info-area";
-@import "./components/order-type";
-@import "./components/recent-order-area";
-@import "./components/top";
+
+@import "./components/detail/menu-detail-area";
+@import "./components/detail/menu-review-area";
+@import "./components/detail/option-popup-area";
+
+@import "./components/menu/menu-category-area";
+@import "./components/menu/menu-list-area";
+@import "./components/menu/order-box-area";
+@import "./components/menu/order-info-area";
+@import "./components/menu/order-type";
+@import "./components/menu/recent-order-area";
+@import "./components/menu/top";
 
 @import "./pages/order-page";
