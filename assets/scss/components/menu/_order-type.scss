@@ -5,6 +5,7 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0,0,0,0.8);
+    z-index:9999;
 }
 
 .order-type-popup{
@@ -16,7 +17,7 @@
     border-radius: 16px 16px 0 0;
     background-color: #fff;
     text-align: center;
-    z-index: 100;
+    z-index: 10000;
 
     .title{
         font-size: 20px;

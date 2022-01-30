@@ -487,6 +487,94 @@ textarea::-webkit-outer-spin-button {
   color: #333;
 }
 
+.menu-detail-area {
+  background-color: #fff;
+}
+
+.menu-detail-area .menu-img {
+  position: relative;
+  height: 300px;
+  background-color: #f8f8f8;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.03);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.03);
+}
+
+.menu-detail-area .menu-img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 130px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0));
+  z-index: 1;
+  opacity: 0.2;
+}
+
+.menu-detail-area .menu-img::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 65px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#000), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0));
+  z-index: 1;
+  opacity: 0.15;
+}
+
+.menu-detail-area .menu-info-area {
+  margin-top: -20px;
+  padding: 0 18px 20px;
+}
+
+.menu-detail-area .menu-info-area .common-inner {
+  position: relative;
+  padding: 18px;
+  border-radius: 5px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.04);
+  z-index: 1;
+}
+
+.menu-detail-area .menu-info-area .menu-info-group {
+  margin-top: 5px;
+}
+
+.menu-detail-area .menu-info-area .menu-info-group .menu-price {
+  line-height: 24px;
+  font-size: 19px;
+  font-weight: 700;
+  color: #e96b69;
+}
+
+.menu-detail-area .menu-info-area .menu-info-group .menu-grade::before {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background-color: #ededed;
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+.menu-detail-area .menu-info-area .menu-info-group .menu-grade, .menu-detail-area .menu-info-area .menu-info-group .menu-number-of-order {
+  line-height: 24px;
+}
+
+.menu-detail-area .menu-info-area .menu-desc {
+  margin-top: 12px;
+  font-size: 15px;
+  line-height: 22px;
+  color: #333;
+}
+
 .menu-category-area {
   position: -webkit-sticky;
   position: sticky;
@@ -870,6 +958,7 @@ textarea::-webkit-outer-spin-button {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
 }
 
 .order-type-popup {
@@ -881,7 +970,7 @@ textarea::-webkit-outer-spin-button {
   border-radius: 16px 16px 0 0;
   background-color: #fff;
   text-align: center;
-  z-index: 100;
+  z-index: 10000;
 }
 
 .order-type-popup .title {
