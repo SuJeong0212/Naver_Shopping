@@ -7,7 +7,7 @@
     <title>NAVER_주문창</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
-<body class="scroll-off">
+<body>
     <div class="container">
         <!-- 고정헤더 영역 -->
         <header class="header-area">
@@ -256,7 +256,7 @@
             </div>
 
             <!-- 옵션 팝업 영역 -->
-            <div class="option-popup-area">
+            <div class="option-popup-area hidden">
                 <div class="dimmed-layer light"></div>
                 <div class="menu-option-popup">
                     <svg class="content-top-pattern" width="100%" height="100%">
@@ -275,7 +275,7 @@
                             </div>
                             <div class="menu-detail-area">
                                 <p class="menu-name">
-                                    <span class="name">메뉴 이름</span>
+                                    <span class="name">칠리베이컨 웜볼</span>
                                     <span class="badge">포장</span>
                                 </p>
                                 <div class="amount-select">
@@ -302,13 +302,53 @@
 
                             <ul class="option-list">
                                 <li class="option-item">
-                                    옵션1
+                                    <input type="radio" id="rd1" class="input-radio" name="base" checked>
+                                    <label for="rd1" class="label">
+                                        <span class="label-txt">추천대로</span>
+                                        <span class="label-icon"></span>
+                                    </label>
                                 </li>
                                 <li class="option-item">
-                                    옵션2
+                                    <input type="radio" id="rd2" class="input-radio" name="base">
+                                    <label for="rd2" class="label">
+                                        <span class="label-txt">채소볼</span>
+                                        <span class="label-icon"></span>
+                                    </label>
                                 </li>
                                 <li class="option-item">
-                                    옵션3
+                                    <input type="radio" id="rd3" class="input-radio" name="base">
+                                    <label for="rd3" class="label">
+                                        <span class="label-txt">곡물볼</span>
+                                        <span class="label-icon"></span>
+                                    </label>
+                                </li>
+                                <li class="option-item">
+                                    <input type="radio" id="rd3" class="input-radio" name="base">
+                                    <label for="rd3" class="label">
+                                        <span class="label-txt">크리미볼</span>
+                                        <span class="label-icon"></span>
+                                    </label>
+                                </li>
+                                <li class="option-item">
+                                    <input type="radio" id="rd3" class="input-radio" name="base">
+                                    <label for="rd3" class="label">
+                                        <span class="label-txt">허니볼</span>
+                                        <span class="label-icon"></span>
+                                    </label>
+                                </li>
+                                <li class="option-item">
+                                    <input type="radio" id="rd3" class="input-radio" name="base">
+                                    <label for="rd3" class="label">
+                                        <span class="label-txt">스윗포테이토볼</span>
+                                        <span class="label-icon"></span>
+                                    </label>
+                                </li>
+                                <li class="option-item">
+                                    <input type="radio" id="rd3" class="input-radio" name="base">
+                                    <label for="rd3" class="label">
+                                        <span class="label-txt">스윗포테이토볼</span>
+                                        <span class="label-icon"></span>
+                                    </label>
                                 </li>
                             </ul>
                         </div>
@@ -317,19 +357,38 @@
                             <div class="option-title">
                                 <p class="title">
                                     <span class="badge">선택</span>
-                                    <span class="text">토핑추가</span>
+                                    <span class="text">드레싱 추가</span>
                                 </p>
                             </div>
 
                             <ul class="option-list">
                                 <li class="option-item">
-                                    옵션1
+                                    <input type="checkbox" id="chk1" class="input-check">
+                                    <label for="chk1" class="label">
+                                        <span class="label-txt">시저 드레싱 추가 <span class="price">+900원</span></span>
+                                        <span class="label-icon"></span>
+                                    </label>
                                 </li>
                                 <li class="option-item">
-                                    옵션2
+                                    <input type="checkbox" id="chk2" class="input-check">
+                                    <label for="chk2" class="label">
+                                        <span class="label-txt">오리엔탈 드레싱 추가 <span class="price">+900원</span></span>
+                                        <span class="label-icon"></span>
+                                    </label>
                                 </li>
                                 <li class="option-item">
-                                    옵션3
+                                    <input type="checkbox" id="chk3" class="input-check">
+                                    <label for="chk3" class="label">
+                                        <span class="label-txt">발사믹 드레싱 추가 <span class="price">+900원</span></span>
+                                        <span class="label-icon"></span>
+                                    </label>
+                                </li>
+                                <li class="option-item">
+                                    <input type="checkbox" id="chk4" class="input-check">
+                                    <label for="chk4" class="label">
+                                        <span class="label-txt">레몬 드레싱 추가 <span class="price">+900원</span></span>
+                                        <span class="label-icon"></span>
+                                    </label>
                                 </li>
                             </ul>
                         </div>

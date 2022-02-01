@@ -6,6 +6,7 @@
 @import "./base/preset";
 
 @import "./components/amount-select";
+@import "./components/top";
 @import "./components/header-area";
 @import "./components/menu-item";
 
@@ -19,6 +20,9 @@
 @import "./components/menu/order-info-area";
 @import "./components/menu/order-type";
 @import "./components/menu/recent-order-area";
-@import "./components/menu/top";
+
+@import "./components/order/order-content-extra";
+@import "./components/order/order-content";
+@import "./components/order/order-form-area";
 
 @import "./pages/order-page";
