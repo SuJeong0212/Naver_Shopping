@@ -236,7 +236,7 @@ textarea::-webkit-outer-spin-button {
   color: #fff;
 }
 
-.amount-select .btn-minus:disabled, .amount-select .btn-plus:disabled {
+.amount-select .btn-minus.disabled, .amount-select .btn-plus.disabled {
   color: #eee;
 }
 
