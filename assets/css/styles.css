@@ -202,6 +202,96 @@ textarea::-webkit-outer-spin-button {
   display: none;
 }
 
+.amount-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 35px;
+}
+
+.amount-select .btn-minus, .amount-select .btn-plus {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #e3e3e3;
+  background-color: #f8fafb;
+  color: #333;
+}
+
+.amount-select .btn-minus.enabled, .amount-select .btn-plus.enabled {
+  border-color: #00d780;
+  background-color: #00d780;
+  color: #fff;
+}
+
+.amount-select .btn-minus:disabled, .amount-select .btn-plus:disabled {
+  color: #eee;
+}
+
+.amount-select .btn-minus::before, .amount-select .btn-plus::before {
+  content: '';
+  display: block;
+  width: 13px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.amount-select .btn-minus {
+  border: 3px 0 0 3px;
+}
+
+.amount-select .btn-plus {
+  border: 0 3px 3px 0;
+}
+
+.amount-select .btn-plus::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 1px;
+  height: 13px;
+  background-color: currentColor;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.amount-select .amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 35px;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  font-weight: 700;
+  color: #242424;
+}
+
+.amount-select .amount.disabled {
+  font-weight: 400;
+  color: #c9c9c9;
+}
+
 .header-area {
   position: fixed;
   top: 0;
@@ -573,6 +663,96 @@ textarea::-webkit-outer-spin-button {
   font-size: 15px;
   line-height: 22px;
   color: #333;
+}
+
+.menu-detail-area .order-info-area {
+  margin-top: 20px;
+  padding: 20px 0 0 0;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: none;
+  background-color: #fff;
+}
+
+.menu-detail-area .order-info-area .type-select, .menu-detail-area .order-info-area .type-amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-detail-area .order-info-area .type-select .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: #333;
+}
+
+.menu-detail-area .order-info-area .type-select .ico-n-logo {
+  margin-right: 4px;
+  width: 20px;
+}
+
+.menu-detail-area .order-info-area .type-select .tab-switch-box {
+  margin-top: 0;
+  width: 160px;
+}
+
+.menu-detail-area .order-info-area .type-select .tab-switch {
+  border-radius: 3px;
+  line-height: 37px;
+  font-size: 13px;
+}
+
+.menu-detail-area .order-info-area .type-select .tab-switch.is-active {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.menu-detail-area .order-info-area .type-select .tab-switch.is-active::after {
+  display: none;
+}
+
+.menu-detail-area .order-info-area .type-amount {
+  margin-top: 20px;
+}
+
+.menu-detail-area .order-info-area .type-amount .title {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: #333;
+}
+
+.menu-detail-area .order-info-area .btn-order {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  margin-top: 20px;
+  padding: 0 16px;
+  width: 100%;
+  line-height: 46px;
+  border-radius: 3px;
+  font-weight: 700;
+  background-color: #01d760;
+  color: #fff;
+}
+
+.menu-detail-area .order-info-area .btn-order:disabled {
+  background-color: #c9c9c9;
+  color: #fff;
 }
 
 .menu-category-area {
