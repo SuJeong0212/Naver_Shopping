@@ -1831,9 +1831,12 @@ textarea::-webkit-outer-spin-button {
 }
 
 .container {
-  padding-top: 94px;
-  padding-bottom: 70px;
   background-color: #f4f7f9;
+}
+
+.container:not(.order) {
+  padding-bottom: 70px;
+  padding-top: 94px;
 }
 
 .common-inner {
