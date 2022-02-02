@@ -16,6 +16,7 @@
             background-image:linear-gradient(264deg, #3accff, #2cec88);
             font-weight: 700;
             color:#fff;
+            z-index: 1;
         }
 
         .btn-close{
@@ -24,6 +25,7 @@
             right: 0;
             width: 56px;
             height: 56px;
+            z-index: 1;
 
             .ico-close{
                 width: 18px;
