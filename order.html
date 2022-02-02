@@ -29,17 +29,220 @@
                     </div>
                     <div class="order-content-body">
                         <!-- 담은 메뉴가 없을 때 -->
-                        <div class="no-order">
+                        <div class="no-order hidden">
                                 <img src="./assets/images/ico-exclaim.svg" alt="" aria-hidden class="icon">
                             <p class="txt">담은 메뉴가 없습니다.</p>
                         </div>
 
+                        <!-- 담은 메뉴가 있을 때 -->
+                        <ul class="menu-list">
+                            <li class="menu-item">
+                                <div class="menu-img-area">
+                                    <img src="https://via.placeholder.com/74/fff/000" alt="" class="menu-img">
+                                </div>
+                                <div class="menu-info-area">
+                                    <p class="menu-name-group">
+                                        <span class="menu-name">칠리베이컨 웜볼</span>
+                                    </p>
+                                    <p class="menu-desc">베이스 선택:추천대로 / 드레싱선택:시저 드레싱</p>
+                                    <button class="btn-option">옵션변경</button>
+                                    <div class="amount-and-price">
+                                        <div class="amount-select">
+                                            <button type="button" class="btn-minus disabled" aria-label="빼기"></button>
+                                            <span class="amount">1</span>
+                                            <button type="button" class="btn-plus" aria-label="더하기"></button>
+                                        </div>
+                                        <p class="menu-price">6,900원</p>
+                                    </div>
+                                </div>
+
+                                <button class="btn-delete">
+                                    <img src="./assets/images/ico-close.svg" alt="삭제" class="ico-delete">
+                                </button>
+                            </li>
+
+                            <li class="menu-item">
+                                <div class="menu-img-area">
+                                    <img src="https://via.placeholder.com/74/fff/000" alt="" class="menu-img">
+                                </div>
+                                <div class="menu-info-area">
+                                    <p class="menu-name-group">
+                                        <span class="menu-name">콥 샐러드</span>
+                                    </p>
+                                    <p class="menu-desc">베이스 선택:추천대로 / 드레싱선택:레몬 드레싱</p>
+                                    <button class="btn-option">옵션변경</button>
+                                    <div class="amount-and-price">
+                                        <div class="amount-select">
+                                            <button type="button" class="btn-minus disabled" aria-label="빼기"></button>
+                                            <span class="amount">1</span>
+                                            <button type="button" class="btn-plus" aria-label="더하기"></button>
+                                        </div>
+                                        <p class="menu-price">7,600원</p>
+                                    </div>
+                                </div>
+
+                                <button class="btn-delete">
+                                    <img src="./assets/images/ico-close.svg" alt="삭제" class="ico-delete">
+                                </button>
+                            </li>
+                        </ul>
+
+                        <div class="order-total">
+                            <span class="total-txt">총 주문금액</span>
+                            <span class="total-price">14,500원</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="/" class="btn-menu-add">
+                    <i class="ico-add"></i>메뉴추가
+                </a>
+            </div>
+
+            <!-- 주문자 정보 -->
+            <div class="order-content-extra">
+                <div class="common-inner">
+                    <div class="orderer-info-area">
+                        <p class="title">주문자 정보</p>
+                        <ul class="info-list">
+                            <li class="info-item">
+                                <p class="info-title">일회용 수저, 포크</p>
+                                <div class="option-group">
+                                    <div class="option-item">
+                                        <input type="radio" id="need" class="input-radio" name="disposables" checked>
+                                        <label for="need" class="input-radio-button need">필요해요</label>
+                                    </div>
+                                    <div class="option-item">
+                                        <input type="radio" id="no-need" class="input-radio" name="disposables">
+                                        <label for="no-need" class="input-radio-button no-need">필요 없어요</label>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="info-item">
+                                <p class="info-title">요청사항</p>
+                                <input type="text" placeholder="(선택) 요청사항을 입력해 주세요." class="input-text">
+                            </li>
+
+                            <li class="info-item">
+                                <p class="info-title">주문자 연락처<span class="fw700 color-point">(필수)</span></p>
+                                <input type="text" placeholder="연락처를 입력해 주세요." class="input-text" required>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="place-map-area">
+                        <p class="title">주문 매장 위치</p>
+                        <div class="map-area">
+                            <div class="place-address-box">
+                                <p class="place-name">샐러디 낙성대점</p>
+                                <p class="place-address">서울특별시 서울구 대박로 123-4</p>
+                                <p class="place-address-detail">낙성대역 8번 출구로 나와서 1층 왼쪽 첫번째</p>
+                            </div>
+
+                            <img src="https://simg.pstatic.net/static.map/v2/map/staticmap.bin?crs=EPSG:4326&baselayer=bl_vc_bg&overlayers=ol_vc_an&scale=2&caller=mw_smart_booking&overlayers=ol_vc_an&center=126.96461290341621,37.47619573818564&markers=type:c|size:mid|label:restaurant|pos:126.96461290341621 37.47619573818564&level=15&w=378&h=160&lang=ko" alt="" class="img-map">
+                        </div>
+                    </div>
+                    
+                    <div class="agreement-area">
+                        <p class="title">개인정보 수집, 제공</p>
+
+                        <ul class="agreement-list">
+                            <li class="agreement-item is-open">
+                                <div class="agreement-title">
+                                    <span class="txt">개인정보 수집 동의</span>
+                                <button class="btn-toggle">
+                                    <img src="./assets/images/ico-arrow-gray.svg" alt="">
+                                </button>
+                                </div>
+                                <div class="agreement-content">
+                                    <개인정보 수집 동의>
+                                    <br><br>
+                                    1. 기본수집항목: [필수] 네이버 아이디, 이름, (휴대)전화번호, [선택] 이메일 주소
+                                    <br>
+                                    ※ 추가 수집하는 필수항목
+                                    <br>
+                                    - 배송, 방문 등이 필요한 상품 구매 시 : 주소
+                                    <br><br>
+                                    2. 수집 및 이용목적 : 사업자회원과 예약이용자의 원활한 거래 진행, 고객상담, 불만처리 등 민원 처리, 분쟁조정 해결을 위한 기록보존, 네이버 예약 이용 후 리뷰작성에 따른 네이버페이 포인트 지급 및 관련 안내
+                                    <br><br>
+                                    3. 동의 거부권 등에 대한 고지: 정보주체는 개인정보의 수집 및 이용 동의를 거부할 권리가 있으나, 이 경우 상품 및 서비스 예약이 제한될 수 있습니다. 그 밖의 내용은 네이버 개인정보 처리방침을 따릅니다.
+                                    <br>
+                                </div>
+                            </li>
+                            <li class="agreement-item">
+                                <div class="agreement-title">
+                                    <span class="txt">개인정보 제공 동의</span>
+                                <button class="btn-toggle">
+                                    <img src="./assets/images/ico-arrow-gray.svg" alt="">
+                                </button>
+                                </div>
+                                <div class="agreement-content">
+                                    <개인정보 제공 동의>
+                                    <br><br>
+                                    1. 개인정보를 제공받는 자 : 샐러디낙성대점
+                                    <br><br>
+                                    2. 제공하는 기본 개인정보 항목: [필수] 네이버 아이디, 이름, (휴대)전화번호, 성별, 연령대, [선택] 이메일 주소
+                                    <br>
+                                    ※ 추가 제공하는 필수항목
+                                    <br>
+                                    - 배송, 방문 등이 필요한 상품 구매 시 : 주소
+                                    <br>
+                                    - 멤버십 할인 시 : 멤버십 가입 여부
+                                    <br><br>
+                                    3. 개인정보를 제공받는 자의 개인정보 보유 및 이용기간 : 네이버 회원탈퇴 시 또는 위 개인정보 이용목적 달성 시 까지 이용합니다.
+                                    <br><br>
+                                    4. 동의 거부권 등에 대한 고지 : 정보주체는 개인정보 제공 동의를 거부할 권리가 있으나, 이 경우 상품 및 서비스 예약이 제한될 수 있습니다.
+                                    <br>
+                                </div>
+                            </li>
+                            <li class="agreement-item">
+                                <div class="agreement-title">
+                                    <span class="txt color-point">주문 취소 및 환불 유의사항</span>
+                                <button class="btn-toggle">
+                                    <img src="./assets/images/ico-arrow-gray.svg" alt="">
+                                </button>
+                                </div>
+                                <div class="agreement-content">
+                                    <주문취소 및 환불 유의사항>
+                                    <br><br>
+                                    1. 판매자의 주문 접수 이후에는 원칙적으로 서비스를 통한 주문 취소가 어렵습니다. 다만, 주문 접수 후 개별 판매자에 따라 서비스 상 '주문취소' 버튼이 제공되는 경우 해당 버튼으로 주문의 일부 또는 전부의 취소가 가능합니다. 이외에 판매자와 유선 연락 또는 판매 장소에서의 요청등 개별 협의에 따라서 주문의 일부 또는 전부 취소가 가능합니다.
+                                    <br><br>
+                                    2. 구매자가 직접 주문한 상품(또는 메뉴)을 찾아가는 주문의 경우, 일정 시간 이후에는 판매자가 해당 상품을 보관하지 않을 수 있으며, 해당 주문에 대한 취소 환불이 어려울 수 있습니다.
+                                    <br><br>
+                                    3. 주문 즉시 조리되는 음식 또는 음료의 경우, 또는 다음과 같이 시간이 경과 등으로 상품의 가치가 현저히 감소하여 재판매가 곤란한 경우 환불 처리가 어려울 수 있습니다.
+                                    <br>
+                                    - 마감할인(특정 시간까지 할인 판매) 상품 및 유통 기한이 있는 상품 등
+                                    <br><br>
+                                    위의 규정에도 불구하고 재화 등의 내용이 표시, 광고 내용과 다르거나 계약내용과 다르게 이행된 경우에는 청약철회 및 계약의 해제를 할 수 있습니다.
+                                    <br>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <p class="agreement-info-txt">주문 서비스 이용을 위한 개인정보 수집 및 제3자 제공, 취소/환불 규정을 확인하였으며 이에 동의합니다.</p>
                     </div>
                 </div>
             </div>
 
+            <!-- 주문하기 버튼 -->
+            <div class="btn-order-area">
+                <button type="button" class="btn-order">
+                    <svg viewBox="0 0 18 18" width="18" height="18" class="ico-n-logo">
+                        <path fill-rule="evenodd" fill="currentColor" d="M18 0v18H0V0h18zM7.255 4.582H4.473v9.054h2.915V8.79l3.357 4.846h2.782V4.582h-2.915v4.846L7.255 4.582z"></path>
+                    </svg> 주문하기
+                </button>
+            </div>
+
+            <!-- 맨 위로 -->
+        <div class="go-to-top">
+            <a href="#" class="link">Top<i class="ico-up"></i></a>
+        </div>
 
         </div>
+
+        <!-- 모달 -->
+        <div class="modal-wrapper"></div>
     </div>
 </body>
 </html>
