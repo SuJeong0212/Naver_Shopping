@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAVER_주문창</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <script src="./assets/js/main.js"></script>
+    <!-- <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/detail.js" defer></script> -->
+    <script src="./assets/js/order.js" defer></script>
 </head>
 <body>
     <div class="container order">
@@ -15,7 +17,8 @@
             <div class="page-title-area">
                 <p class="title">주문서</p>
                 <button class="btn-close">
-                    <img src="./assets/images/ico-close-white.svg" alt="닫기" class="ico-close">
+                    <a href="index.html">
+                        <img src="./assets/images/ico-close-white.svg" alt="닫기" class="ico-close"></a>
                 </button>
             </div>
 
@@ -95,7 +98,7 @@
                     </div>
                 </div>
 
-                <a href="/" class="btn-menu-add">
+                <a href="#none" class="btn-menu-add">
                     <i class="ico-add"></i>메뉴추가
                 </a>
             </div>
@@ -263,7 +266,7 @@
                     </div>
 
                     <h1 class="modal-title">주문 불가</h1>
-                    <p class="modal-desc">지금은 주문 가능 한 시간이 아닙니다.</p>
+                    <p class="modal-desc">1개 이상 주문이 가능합니다.</p>
                 </div>
 
                 <div class="btn-area">
@@ -272,6 +275,8 @@
                 </div>
             </div>
         </div>
+
+        <div id="toast"></div>
     </div>
 </body>
 </html>
