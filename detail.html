@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAVER_주문창</title>
+    <link data-react-helmet="true" rel="icon" type="image/png" href="favicon_order.ico">
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <!-- <script src="./assets/js/main.js" defer></script> -->
+    <script src="./assets/js/main.js" defer></script>
     <script src="./assets/js/detail.js" defer></script>
+    <script src="./assets/js/order.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -20,7 +22,7 @@
                     </a>
                     샐러디 낙성대점
                 </h1>
-                <a href="#none" class="my-orders">주문내역</a>
+                <a href="./order.html" class="my-orders">주문내역</a>
             </div>
             <div class="place-tab scroll-x" role="tablist">
                 <div class="tab-inner">
@@ -397,7 +399,7 @@
                     </div>
 
                     <div class="content-bottom">
-                        <button type="button" class="btn-order"><span class="count">1</span>개 담기 <span class="price">6,900</span>원</button>
+                        <a href="./order.html"><button type="button" class="btn-order"><span class="count">1</span>개 담기 <span class="price">6,900</span>원</button></a>
                     </div>
                 </div>
             </div>
