@@ -71,3 +71,18 @@
         }
     }
 }
+
+#toast.reveal{
+    position: relative;
+    top: 0;
+    left: 50%;
+    right:50%;
+    transform: translate(-50%, -50%);
+    background-color:rgba(0,0,0,0.4);
+    color:#fff;
+    font-size: 18px;
+    border-radius: 10px;
+    text-align: center;
+    padding:10px 20px;
+    z-index: 10000;
+}

@@ -36,4 +36,31 @@ tabSwitch.forEach((item, index) => {
     })
 })
 
-// let headerMenu = document.querySelector
+//시그니처샐러드 - scrollY : 1096
+//웜볼 - 1600
+//샌드 - 2110
+//랩 - 2480
+//드레싱 - 2995
+// let headerMenu = document.querySelectorAll('.category-tab')
+
+// window.addEventListener('scroll',function(){
+//     if(window.scrollY <= 1096){
+//         headerMenu[0].classList.remove('is-active')
+//         headerMenu[1].classList.add('is-active')
+//     }else if(window.scrollY <= 1600){
+//         headerMenu[1].classList.remove('is-active')
+//         headerMenu[2].classList.add('is-active')
+//     }else if(window.scrollY <= 2110){
+//         headerMenu[2].classList.remove('is-active')
+//         headerMenu[3].classList.add('is-active')
+//     }else if(window.scrollY <= 2480){
+//         headerMenu[3].classList.remove('is-active')
+//         headerMenu[4].classList.add('is-active')
+//     }else if(window.scrollY <= 2995){
+//         headerMenu[4].classList.remove('is-active')
+//         headerMenu[5].classList.add('is-active')
+//     }else{
+//         headerMenu.classList.remove('is-active')
+//         // headerMenu[0].classList.add('is-active')
+//     }
+// })
